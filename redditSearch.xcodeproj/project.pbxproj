@@ -8,24 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		62B6E14B2214966200183A3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B6E14A2214966200183A3A /* AppDelegate.m */; };
-		62B6E14E2214966200183A3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B6E14D2214966200183A3A /* ViewController.m */; };
 		62B6E1512214966200183A3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B6E14F2214966200183A3A /* Main.storyboard */; };
 		62B6E1532214966300183A3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62B6E1522214966300183A3A /* Assets.xcassets */; };
 		62B6E1562214966300183A3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62B6E1542214966300183A3A /* LaunchScreen.storyboard */; };
 		62B6E1592214966300183A3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B6E1582214966300183A3A /* main.m */; };
+		62B6E163221497CC00183A3A /* RLGPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B6E162221497CC00183A3A /* RLGPost.m */; };
+		62B6E16722149D0C00183A3A /* RLGPostController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B6E16622149D0C00183A3A /* RLGPostController.m */; };
+		62B6E16D2214B7D100183A3A /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B6E16C2214B7D100183A3A /* PostListTableViewController.swift */; };
+		62B6E1722214D3A800183A3A /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B6E1712214D3A800183A3A /* PostTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		62B6E1462214966200183A3A /* redditSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = redditSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62B6E1492214966200183A3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		62B6E14A2214966200183A3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		62B6E14C2214966200183A3A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		62B6E14D2214966200183A3A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		62B6E1502214966200183A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62B6E1522214966300183A3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62B6E1552214966300183A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		62B6E1572214966300183A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62B6E1582214966300183A3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		62B6E161221497CC00183A3A /* RLGPost.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLGPost.h; sourceTree = "<group>"; };
+		62B6E162221497CC00183A3A /* RLGPost.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLGPost.m; sourceTree = "<group>"; };
+		62B6E16522149D0C00183A3A /* RLGPostController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RLGPostController.h; sourceTree = "<group>"; };
+		62B6E16622149D0C00183A3A /* RLGPostController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RLGPostController.m; sourceTree = "<group>"; };
+		62B6E16B2214B7D100183A3A /* redditSearch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "redditSearch-Bridging-Header.h"; sourceTree = "<group>"; };
+		62B6E16C2214B7D100183A3A /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
+		62B6E1712214D3A800183A3A /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +66,54 @@
 		62B6E1482214966200183A3A /* redditSearch */ = {
 			isa = PBXGroup;
 			children = (
+				62B6E164221497D600183A3A /* Models */,
+				62B6E1732214D3B800183A3A /* Views */,
+				62B6E1602214968000183A3A /* ViewControllers */,
+				62B6E14F2214966200183A3A /* Main.storyboard */,
+				62B6E15F2214967500183A3A /* Resources */,
+				62B6E16522149D0C00183A3A /* RLGPostController.h */,
+				62B6E16622149D0C00183A3A /* RLGPostController.m */,
+				62B6E16B2214B7D100183A3A /* redditSearch-Bridging-Header.h */,
+			);
+			path = redditSearch;
+			sourceTree = "<group>";
+		};
+		62B6E15F2214967500183A3A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				62B6E1492214966200183A3A /* AppDelegate.h */,
 				62B6E14A2214966200183A3A /* AppDelegate.m */,
-				62B6E14C2214966200183A3A /* ViewController.h */,
-				62B6E14D2214966200183A3A /* ViewController.m */,
-				62B6E14F2214966200183A3A /* Main.storyboard */,
 				62B6E1522214966300183A3A /* Assets.xcassets */,
 				62B6E1542214966300183A3A /* LaunchScreen.storyboard */,
 				62B6E1572214966300183A3A /* Info.plist */,
 				62B6E1582214966300183A3A /* main.m */,
 			);
-			path = redditSearch;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		62B6E1602214968000183A3A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				62B6E16C2214B7D100183A3A /* PostListTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		62B6E164221497D600183A3A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				62B6E161221497CC00183A3A /* RLGPost.h */,
+				62B6E162221497CC00183A3A /* RLGPost.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		62B6E1732214D3B800183A3A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				62B6E1712214D3A800183A3A /* PostTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +147,7 @@
 				TargetAttributes = {
 					62B6E1452214966200183A3A = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -141,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62B6E14E2214966200183A3A /* ViewController.m in Sources */,
+				62B6E16722149D0C00183A3A /* RLGPostController.m in Sources */,
 				62B6E1592214966300183A3A /* main.m in Sources */,
 				62B6E14B2214966200183A3A /* AppDelegate.m in Sources */,
+				62B6E16D2214B7D100183A3A /* PostListTableViewController.swift in Sources */,
+				62B6E163221497CC00183A3A /* RLGPost.m in Sources */,
+				62B6E1722214D3A800183A3A /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,14 +334,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = redditSearch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/redditSearch/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = A.redditSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "redditSearch/redditSearch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -301,14 +354,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = redditSearch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/redditSearch/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = A.redditSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "redditSearch/redditSearch-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
